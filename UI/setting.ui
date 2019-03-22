@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setting</class>
+ <widget class="QFrame" name="setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1161</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,5,0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>采集端管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>IP</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_ip">
+          <property name="text">
+           <string>192.168.0.3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>端口</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_port">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>2000</string>
+          </property>
+          <property name="maxLength">
+           <number>11</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addEqu">
+          <property name="text">
+           <string>添加</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QListWidget" name="listEqu">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>100</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>192.168.0.3:2000</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>192.168.0.4:2001</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="delcur">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>9999</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>删
+除
+选
+中</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>通道名称管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="listChName">
+        <property name="rowCount">
+         <number>18</number>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>3000</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>8</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>10</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>11</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>12</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>13</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>14</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>15</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>16</string>
+         </property>
+        </row>
+        <row/>
+        <row/>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>6</string>
+         </property>
+        </item>
+        <item row="5" column="0">
+         <property name="text">
+          <string>7</string>
+         </property>
+        </item>
+        <item row="6" column="0">
+         <property name="text">
+          <string>8</string>
+         </property>
+        </item>
+        <item row="7" column="0">
+         <property name="text">
+          <string>9</string>
+         </property>
+        </item>
+        <item row="8" column="0">
+         <property name="text">
+          <string>10</string>
+         </property>
+        </item>
+        <item row="9" column="0">
+         <property name="text">
+          <string>11</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="save">
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

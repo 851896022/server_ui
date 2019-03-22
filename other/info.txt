@@ -1,0 +1,4 @@
+{\"afterGapMinute\":0,\"antCode\":\"56205\",\"antUsedCode\":\"205\",\"azimuthM\":\"255\",\"beforeGapMinute\":290,\"days\":\"1234567\",\"endTime\":\"2019-02-01 
+\",\"freq\":\"
+\",\"power\":\"100\",\"progChannel\":\"2\",\"progCode\":\"CNR00200000\",\"progName\":\"CCTV1\",\"rmks\":\"\",\"runid\":31621,\"startTime\":\"2019-02-01 
+\",\"syncTime\":\"2019-02-01 16:47:43\",\"taskType\":\"D\",\"transCode\":\"563101\",\"transUsedCode\":\"B01\"}

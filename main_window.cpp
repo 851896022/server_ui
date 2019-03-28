@@ -80,7 +80,7 @@ main_window::~main_window()
     }
     {
         QProcess p;
-        QString c = "taskkill /im server_ui.exe /f";
+        QString c = "taskkill /im "+qApp->applicationName()+".exe /f";
         p.execute(c);
         p.close();
 

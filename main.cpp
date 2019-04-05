@@ -8,7 +8,6 @@
 #include <QDateTime>
 #include "background/clientSvr/clientserver.h"
 
-
 global *g;
 void setDebugOutput(const QString &targetFilePath, const bool &argDateFlag = false);
 int main(int argc, char *argv[])

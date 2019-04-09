@@ -56,7 +56,11 @@ void EditYxt::on_btnAdd_clicked()
     }
     if(ui->startTime->time()>=ui->endTime->time())
     {
-        return;
+        if(ui->endTime->time()!=QTime(0,0))
+        {
+            return;
+        }
+
     }
     QString msg;
     msg.append(ui->startTime->time().toString("hh:mm:ss"));

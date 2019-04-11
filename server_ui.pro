@@ -77,7 +77,7 @@ FORMS += \
     UI/ch.ui \
     UI/savesetwindow.ui \
     UI/edityxt.ui
-
+RC_ICONS    = main.ico
 RESOURCES += \
     file.qrc \
     other/rc.qrc

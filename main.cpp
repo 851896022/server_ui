@@ -13,21 +13,27 @@ void setDebugOutput(const QString &targetFilePath, const bool &argDateFlag = fal
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
     setDebugOutput( qApp->applicationDirPath()+"/log/%1.log", true );
+    qDebug()<<"new global";
     g=new global;
 
     processManagement *proManage=new processManagement;
     proManage->initHexToPcm();
     proManage->initAlarm();
+    qDebug()<<"new main window";
     main_window w;
+    qDebug()<<"new reSavedata";
     reSaveData r;
     g->threadList.append(&r);
+    qDebug()<<"new clinet server";
     ClientServer clientServer;
     g->threadList.append(&clientServer);
+    qDebug()<<"new clinet server initThis";
     clientServer.initThis();
     QObject::connect(&r,SIGNAL(sendALarm(int,int,QDateTime)),clientServer.alarmServer,SLOT(sendAlarmToClient(int,int,QDateTime)));
     QObject::connect(&r,SIGNAL(sendSim(int,float)),clientServer.alarmServer,SLOT(sendSimtoCLient(int,float)));
-
+    qDebug()<<"new main windows show";
     w.show();
 
     return a.exec();
@@ -97,6 +103,10 @@ void setDebugOutput(const QString &rawTargetFilePath_, const bool &argDateFlag_)
 
             QTextStream textStream( &file );
             textStream << QDateTime::currentDateTime().toString( "yyyy-MM-dd hh:mm:ss" ) << ": " << message << "\r"<<endl;
+            {
+            QTextStream textStream( stdout );
+            textStream << QDateTime::currentDateTime().toString( "yyyy-MM-dd hh:mm:ss" ) << ": " << message << "\r"<<endl;
+            }
         }
     };
 

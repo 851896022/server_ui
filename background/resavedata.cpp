@@ -2,10 +2,13 @@
 
 reSaveData::reSaveData(QObject *parent) : QObject(parent)
 {
+    qDebug()<<"new socket";
     socket=new QUdpSocket;
     g->threadList.append(socket);
+    qDebug()<<"socket connect";
     connect(socket,SIGNAL(readyRead()),this,SLOT(onReceived()));
-    socket->bind(2500);
+    qDebug()<<"socket bind";
+    socket->bind(2500,QAbstractSocket::DontShareAddress);
 }
 void reSaveData::onReceived()
 {

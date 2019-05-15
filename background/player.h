@@ -16,9 +16,7 @@ public:
     QByteArray tempBuffer;
     QTimer *timer;
 
-    //定义文件指针
-    char *fileBuffer;
-    int fileLength;
+
 signals:
 
 public slots:
